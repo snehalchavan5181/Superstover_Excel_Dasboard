@@ -1,0 +1,17 @@
+-- Total Sales
+SELECT SUM(sales) AS total_sales FROM orders;
+
+-- Total Profit
+SELECT SUM(profit) AS total_profit FROM orders;
+
+-- Product-wise Sales
+SELECT product_name, SUM(sales) AS total_sales 
+FROM orders
+GROUP BY product_name;
+
+-- Top Customer
+SELECT customer_name, SUM(sales) AS total_sales
+FROM orders
+GROUP BY customer_name
+ORDER BY total_sales DESC
+LIMIT 1;

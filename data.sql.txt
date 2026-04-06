@@ -1,0 +1,5 @@
+INSERT INTO orders (order_id, order_date, customer_name, city, product_name, sales, quantity, profit)
+VALUES
+(1, '2024-01-10', 'Snehal', 'Mumbai', 'Chair', 5000, 2, 500),
+(2, '2024-01-12', 'Akshay', 'Pune', 'Laptop', 45000, 1, 5000),
+(3, '2024-01-15', 'Riya', 'Delhi', 'Pen', 500, 10, 50);
